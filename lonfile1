@@ -1,0 +1,12 @@
+
+Author :  Swaty Kahn
+DevOps and Automation Engineer
+London UK
+01/02/2025
+
+I am going to add new Java codes regarding Inheritence (OOP)
+
+// Base class class Animal { void eat() { System.out.println("This animal eats food."); } } // Derived class class Dog extends Animal { void bark() { System.out.println("The dog barks."); } } public class SingleInheritanceExample { public static void main(String[] args) { Dog dog = new Dog(); dog.eat(); // Calling method from the base class dog.bark(); // Calling method from the derived class }
+
+class Animal { void eat() { System.out.println("This animal eats food."); } } // Derived class class Dog extends Animal { void bark() { System.out.println("The dog barks."); } } // Further derived class class Puppy extends Dog { void weep() { System.out.println("The puppy weeps."); } } public class MultilevelInheritanceExample { public static void main(String[] args) { Puppy puppy = new Puppy(); puppy.eat(); // Calling method from the base class puppy.bark(); // Calling method from the first derived class puppy.weep(); // Calling method from the further derived class } }
+
