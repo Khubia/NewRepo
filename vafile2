@@ -1,0 +1,15 @@
+
+Author : K Jehangiri
+DevOps & Automation Engineer
+Virginia USA
+01/02/2025
+
+Codes Received. Thanks
+Addding New codes with second commit
+
+import org.openqa.selenium.WebDriver; import org.openqa.selenium.chrome.ChromeDriver; import org.openqa.selenium.By; import org.openqa.selenium.WebElement; public class SeleniumTest { public static void main(String[] args) { System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver"); WebDriver driver = new ChromeDriver(); driver.get("https://www.example.com"); WebElement element = driver.findElement(By.name("q")); element.sendKeys("hello world"); element.submit(); driver.quit(); } }
+
+import java.nio.file.*; import java.io.IOException; public class ListFiles { public static void main(String[] args) { Path path = Paths.get("path/to/directory"); try (DirectoryStream<Path> stream = Files.newDirectoryStream(path)) { for (Path file : stream) { System.out.println(file.getFileName()); } } catch (IOException | DirectoryIteratorException ex) { System.err.println(ex); } } }
+
+import java.nio.file.*; import java.io.IOException; public class CreateDirectory { public static void main(String[] args) { Path path = Paths.get("path/to/new_directory"); try { Files.createDirectory(path); System.out.println("Directory created successfully."); } catch (IOException e) { System.err.println("Failed to create directory: " + e.getMessage()); } } }
+
