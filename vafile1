@@ -1,0 +1,10 @@
+Author : Jehangiri
+
+DevOps & Automation Engineer
+Virginia United States
+
+Adding som java hashmaps codes.
+
+import java.util.HashMap; import java.util.Map; public class IterateHashMapExample { public static void main(String[] args) { // Creating a HashMap HashMap<String, Integer> map = new HashMap<>(); // Adding elements to the HashMap map.put("Apple", 10); map.put("Banana", 20); map.put("Cherry", 30); // Iterating over keys System.out.println("Iterating over keys:"); for (String key : map.keySet()) { System.out.println(key + ": " + map.get(key)); } // Iterating over key-value pairs System.out.println("Iterating over key-value pairs:"); for (Map.Entry<String, Integer> entry : map.entrySet()) { System.out.println(entry.getKey() + ": " + entry.getValue()); } } }
+
+import java.util.HashMap; public class CheckKeyHashMapExample { public static void main(String[] args) { // Creating a HashMap HashMap<String, Integer> map = new HashMap<>(); // Adding elements to the HashMap map.put("Apple", 10); map.put("Banana", 20); map.put("Cherry", 30); // Checking if a key exists if (map.containsKey("Banana")) { System.out.println("Banana exists in the HashMap"); } // Checking if a value exists if (map.containsValue(30)) { System.out.println("Value 30 exists in the HashMap"); } } }
