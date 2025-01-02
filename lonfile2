@@ -1,0 +1,12 @@
+
+Author : Swaty Kahn
+DevOps & Automation Engineer
+London UK
+01/02/2025
+
+Some other codes of Java
+please pull these codes as you see the notification. Thanks.
+
+import org.junit.jupiter.api.Test; import static org.junit.jupiter.api.Assertions.assertEquals; public class CalculatorTest { @Test public void testAddition() { Calculator calculator = new Calculator(); int result = calculator.add(10, 20); assertEquals(30, result); } }
+
+import org.junit.jupiter.api.Test; import static org.junit.jupiter.api.Assertions.assertNotNull; import static org.mockito.Mockito.*; public class UserServiceTest { @Test public void testUserService() { UserRepository mockRepo = mock(UserRepository.class); UserService userService = new UserService(mockRepo); User user = new User("John", "Doe"); when(mockRepo.save(user)).thenReturn(user); User result = userService.createUser(user); assertNotNull(result); } }
